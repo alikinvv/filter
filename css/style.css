@@ -1,0 +1,125 @@
+.section {
+  padding: 55px 0;
+}
+.section__title {
+  padding-left: 15px;
+  margin-bottom: 10px;
+  margin-top: 0;
+}
+
+.row {
+  margin: 30px auto;
+  max-width: 1400px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}
+.row p strong {
+  padding-left: 15px;
+}
+
+a {
+  color: #c94541;
+  text-decoration: none;
+}
+a:hover, a:focus {
+  text-decoration: underline;
+}
+
+.category h1 {
+  margin-bottom: 21px;
+}
+.category-flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+.category__nav {
+  padding: 15px;
+  list-style-type: none;
+  margin-top: -11px;
+  display: block;
+  margin-bottom: 71px;
+  margin-left: -13px;
+}
+.category__nav li {
+  float: left;
+  margin-right: 5px;
+}
+.category__nav li a {
+  color: #235d80;
+  font-size: 13px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  display: inline-block;
+  padding: 7px 24px 7px 12px;
+  position: relative;
+}
+.category__nav li a:hover, .category__nav li a:focus {
+  text-decoration: none;
+}
+.category__nav li a:before, .category__nav li a:after {
+  content: '';
+  width: 2px;
+  height: 11px;
+  background: #fff;
+  position: absolute;
+  top: 50%;
+  right: 14px;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+.category__nav li a:before {
+  -webkit-transform: translateY(-50%) rotate(45deg);
+          transform: translateY(-50%) rotate(45deg);
+}
+.category__nav li a:after {
+  -webkit-transform: translateY(-50%) rotate(-45deg);
+          transform: translateY(-50%) rotate(-45deg);
+}
+.category__nav li a.checked {
+  background: #235d80;
+  color: #fff;
+  border-radius: 50px;
+}
+
+.cableItem {
+  width: 22%;
+  height: 215px;
+  color: #235d80;
+  margin-bottom: 30px;
+  padding: 0;
+  overflow: hidden;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+.cableItem-hide {
+  opacity: 0;
+  width: 0;
+  padding: 0;
+  margin: 0;
+}
+.cableItem__title {
+  font-size: 13px;
+  line-height: 16px;
+}
+.cableItem:hover, .cableItem:focus {
+  text-decoration: none;
+}
+.cableItem:hover .cableItem__img, .cableItem:focus .cableItem__img {
+  background-size: 108%;
+  background-position: -48px 50%;
+}
+.cableItem__img {
+  background-color: #ebeef0;
+  background-size: 90%;
+  background-position: 0 50%;
+  background-repeat: no-repeat;
+  height: 155px;
+  margin-bottom: 18px;
+  -webkit-transition: all .4s;
+  transition: all .4s;
+}

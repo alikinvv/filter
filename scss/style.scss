@@ -1,0 +1,116 @@
+$mainBlue: #235d80;
+$mainRed: #c94541;
+
+.section {
+  padding: 55px 0;
+  &__title {
+    padding-left: 15px;
+    margin-bottom: 10px;
+    margin-top: 0;
+  }
+}
+
+.row {
+	margin: 30px auto;
+  max-width: 1400px;
+  transition: all .4s;
+	p strong {
+		padding-left: 15px;
+	}
+}
+
+a {
+  color: $mainRed;
+  text-decoration: none;
+  &:hover, &:focus {text-decoration: underline;}
+}
+
+.category {
+  h1 {margin-bottom: 21px;}
+  &-flex {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  &__nav {
+    padding: 15px;
+    list-style-type: none;
+    margin-top: -11px;
+    display: block;
+    margin-bottom: 71px;
+    margin-left: -13px;
+    li {
+      float: left;
+      margin-right: 5px;
+      a {
+        color: $mainBlue;
+        font-size: 13px;
+        transition: all .4s;
+        display: inline-block;
+        padding: 7px 24px 7px 12px;
+        position: relative;
+        &:hover, &:focus {text-decoration: none;}
+        &:before, &:after {
+          content: '';
+          width: 2px;
+          height: 11px;
+          background: #fff;
+          position: absolute;
+          top: 50%;
+          right: 14px;
+          transform: translateY(-50%);
+        }
+        &:before {
+          transform: translateY(-50%) rotate(45deg);
+        }
+        &:after {
+          transform: translateY(-50%) rotate(-45deg);
+        }
+        &.checked {
+          background: $mainBlue;
+          color: #fff;
+          -webkit-border-radius: 50px;
+          -moz-border-radius: 50px;
+          border-radius: 50px;
+        }
+      }
+    }
+  }
+}
+
+.cableItem {
+	width: 22%;
+  height: 215px;
+  color: $mainBlue;
+  margin-bottom: 30px;
+  padding: 0;
+  overflow: hidden;
+  transition: all .4s;
+  padding-left: 15px;
+  padding-right: 15px;
+  &-hide {
+    opacity: 0;
+    width: 0;
+    padding: 0;
+    margin: 0;
+  }
+  &__title {
+    font-size: 13px;
+    line-height: 16px;
+  }
+  &:hover, &:focus {
+    text-decoration: none;
+    .cableItem__img {
+      background-size: 108%;
+      background-position: -48px 50%;
+    }
+  }
+  &__img {
+    background-color: #ebeef0;
+    background-size: 90%;
+    background-position: 0 50%;
+    background-repeat: no-repeat;
+    height: 155px;
+    margin-bottom: 18px;
+    transition: all .4s;
+  }
+}
